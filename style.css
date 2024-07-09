@@ -144,7 +144,7 @@ body {
     position: absolute;
     display: inline-flex;
     cursor: pointer;
-    margin-left: 60px;
+    margin-left: 64px;
 }
 
 .left::before,
@@ -165,7 +165,7 @@ body {
     border-left: 2px solid #FFFFFF;
     transform: rotate(135deg);
     top: 3px;
-    left: 5px;
+    left: 3px;
 }
 
 .left::after {
@@ -357,7 +357,7 @@ body {
     height: 443px;
     width: 1440px;
     left: -1px;
-    border: 1px solid #1F204140;
+    border: 0.1px solid rgba(31, 32, 65, 0.25);
     position: absolute;
 }
 
@@ -509,7 +509,6 @@ body {
 
 input {
     display: flex;
-    text-decoration: none;
     border: none;
     position: relative;
     align-items: center;
@@ -518,42 +517,34 @@ input {
     left: 12px;
     font-size: 14px;
     line-height: 24px;
-    color: rgba(255, 255, 255, 1);
-     font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
+
 .left1 {
     width: 44px;
     height: 44px;
     position: absolute;
     display: inline-flex;
-    cursor: pointer;
-    left: 216px;
-    top: 7px;
+    left: 229px;
+    top: 13px;
 }
 
 .left1::before,
 .left1::after {
     content: "";
-    position: absolute;
+        position: absolute;
 }
 
 .left1::before {
     width: 16px;
     height: 2px;
-    background-color:#FFFFFF;
+    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     top: 7px;
 }
 
 .left1::after {
-    border-top: 2px;
-    border-color:#BC9CFF;
-    border-left: 2px;
+    border-top: 9px solid #bc9cff;
+    border-left: 2px solid #8ba4f9;
     transform: rotate(135deg);
-    top: 3px;
-    left: 5px;
-}
-
-.left1::after {
-    width: 9px;
-    height: 9px;
+    left: 10px;
 }
