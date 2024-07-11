@@ -286,6 +286,53 @@ body {
     justify-content: space-around;
 }
 
+.calendar {
+    width: 320px;
+    height: 369px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+}
+
+.calendar_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.calendar_header button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    width: 23.93px;
+    height: 24px;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.day {
+    text-align: center;
+    padding: 5px;
+    color: rgba(31, 32, 65, 0.5);
+
+}
+
+.dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
 .check_out {
     display: flex;
     align-items: flex-start;
@@ -535,6 +582,7 @@ input {
     align-items: center;
     justify-content: space-around;
 }
+
 .rectangle {
     display: flex;
     position: absolute;
@@ -544,14 +592,15 @@ input {
     top: 372px;
     border: 1px solid rgba(31, 32, 65, 0.05);
 }
+
 .footer_copyright_bar {
-position: absolute;
-display: flex;
-left: 140px;
-top: 400px;
-font-weight: 400;
-font-size: 14px;
-color: rgba(31, 32, 65, 0.75);
+    position: absolute;
+    display: flex;
+    left: 140px;
+    top: 400px;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(31, 32, 65, 0.75);
 }
 
 .logo_tw {
@@ -561,13 +610,16 @@ color: rgba(31, 32, 65, 0.75);
     height: 24px;
     position: absolute;
 }
+
 .logo_fb {
     left: 1232px;
     top: 25px;
     width: 24px;
     height: 24px;
     position: absolute;
-}.logo_ig {
+}
+
+.logo_ig {
     left: 1276px;
     top: 25px;
     width: 24px;
