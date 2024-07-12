@@ -293,7 +293,7 @@ body {
     height: 347px;
     top: 49px;
     left: -2px;
-    display: none;
+    display: flex;
     position: absolute;
     flex-direction: column;
     padding: 10px;
@@ -393,6 +393,24 @@ font-weight: 700;
 .date.inactive: :hover {
     color: #FFFFFF;
 
+}
+.reset{
+    display: flex;
+    position: absolute;
+    left: 15px;
+    top: 332px;
+}
+
+.reset button {
+    height: 18px;
+    width: 75px;
+    padding: 0px;
+    font-size: 12px;
+    font-weight: 700;
+    color: rgba(188, 156, 255, 1);
+    border: none;
+    background-color: #FFFFFF;
+    line-height:14.63px;
 }
 
 .check_out {
