@@ -288,13 +288,12 @@ body {
 }
 
 .calendar {
-    top:calc(100% +30px);
-    width: 300px;
-    height: 347px;
-    top: 49px;
-    left: -2px;
-    display: flex;
     position: absolute;
+    top: 49px;
+    width: 298px;
+    height: 347px;
+    left: 0px;
+    display: flex;
     flex-direction: column;
     padding: 10px;
     background: white;
@@ -307,60 +306,60 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-
 }
+
 .monthYear {
     text-align: center;
     height: 24px;
     font-size: 19px;
     font-weight: 700;
 }
+
 .calendar_header button {
+    font-size: 24px;
+    line-height: 20.4px;
+    text-align: center;
     display: flex;
-    align-items: center;
     justify-content: center;
     border: none;
+    border-radius: 50%;
     background-color: white;
-    color: #66D2EA;
     cursor: pointer;
     width: 23.93px;
     height: 24px;
-    font-size: 24px;
 }
 
 .days {
     display: grid;
-    position: absolute;
+    grid-template-columns: repeat(7, 1fr);
     width: 279px;
     height: 40px;
-    left: 21px;
-    padding-top: 70px;
-    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+    padding: 10px;
+    padding-top: 18px;
+    padding-bottom: 0px;
 }
 
 .day {
     text-align: center;
     padding: 5px;
     color: rgba(188, 156, 255, 1);
-font-size: 12px;
-line-height: 14,63px;
-font-weight: 700;
-
+    font-size: 12px;
+    line-height: 14, 63px;
+    font-weight: 700;
 }
 
 .dates {
-    align-items: center;
-    justify-content: center;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     width: 279px;
     height: 200px;
-    position: absolute;
-    top: 112px;
-    left: 20px;
     font-size: 12px;
-    line-height: 14,63px;
     padding: 0px;
+    padding-left: 10px;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .date {
@@ -376,8 +375,8 @@ font-weight: 700;
     width: 40px;
     height: 40px;
     transition: 0.2s;
- color: rgba(31, 32, 65, 0.5);
- ;
+    color: rgba(31, 32, 65, 0.5);
+    ;
 }
 
 .date:hover,
@@ -390,28 +389,56 @@ font-weight: 700;
     color: rgba(31, 32, 65, 0.25);
 }
 
-.date.inactive: :hover {
+.date.inactive: hover {
     color: #FFFFFF;
-
 }
-.reset{
+
+.reset {
     display: flex;
     position: absolute;
-    left: 15px;
-    top: 332px;
+    justify-content: center;
+    align-items: center;
+    line-height: 14.63px;
+    left: 19px;
+    top: 333px;
 }
 
 .reset button {
-    height: 18px;
-    width: 75px;
+    height: 15px;
+    width: 72px;
     padding: 0px;
     font-size: 12px;
     font-weight: 700;
     color: rgba(188, 156, 255, 1);
     border: none;
     background-color: #FFFFFF;
-    line-height:14.63px;
+    line-height: 14.63px;
+    font-family: Montserrat;
 }
+
+.use {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    line-height: 14.63px;
+    left: 215px;
+    top: 333px;
+}
+
+.use button {
+    height: 15px;
+    width: 72px;
+    padding: 0px;
+    font-size: 12px;
+    font-weight: 700;
+    color: rgba(188, 156, 255, 1);
+    border: none;
+    background-color: #FFFFFF;
+    line-height: 14.63px;
+    font-family: Montserrat;
+}
+
 
 .check_out {
     display: flex;
