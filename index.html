@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-        <title>Hotel maket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Hotel maket</title>
 </head>
 
 <body>
@@ -51,8 +51,16 @@
             <div class="arrive">
                 <div class="text_arrive">ПРИБЫТИЕ</div>
                 <div class="btn_arrive">
-                    <a class="btn_arrive1" href="">ДД.ММ.ГГГГ</a>
-                    <a class="img_btn_arrive1" href=""><img src="images/expand_more.png" alt="expand_more.png"></a>
+                    <button class="btn_arrive1">ДД.ММ.ГГГГ<i class="fa fa-angle-down" aria-hidden="true"
+                            style="color: rgba(31, 32, 65, 0.5);"></i>
+                    </button>
+                    <div class="text_check_out">ВЫЕЗД</div>
+                    <div class="btn_check_out">
+                        <button class="btn_check_out1">ДД.ММ.ГГГГ<i class="fa fa-angle-down" aria-hidden="true"
+                                style="color: rgba(31, 32, 65, 0.5);"></i>
+                        </button>
+
+                    </div>
                     <div class="calendar">
                         <div class="calendar_header">
                             <button id="prevBtn">
@@ -83,71 +91,65 @@
                     <script src="main.js"></script>
                 </div>
             </div>
-            <div class="check_out">
-                <div class="text_check_out">ВЫЕЗД</div>
-                <div class="btn_check_out">
-                    <a class="btn_check_out1" href="">ДД.ММ.ГГГГ</a>
-                    <a class="img_btn_check_out1" href="">
-                        <img src="images/expand_more.png" alt="expand_more.png"></a>
-                </div>
-            </div>
-            <div class="text_back">Лучшие номера для вашей работы, отдыха и просто вдохновения</div>
-
         </div>
-        <div class="footer">
-            <div class="footer_logo">
-                <img src="images/Logo.png" alt="logo">
+
+        <div class="text_back">Лучшие номера для вашей работы, отдыха и просто вдохновения</div>
+
+    </div>
+    <div class="footer">
+        <div class="footer_logo">
+            <img src="images/Logo.png" alt="logo">
+        </div>
+        <div class="text_footer">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные
+            взгляды»</div>
+        <div class="nav_footer_name">
+            <a class="nav_footer1" href="#"><b>НАВИГАЦИЯ</b></a>
+            <div class="footer_items1">
+                <a class="nav_footer_items1" href="#">О нас</a>
+                <a class="nav_footer_items1" href="#">Новости</a>
+                <a class="nav_footer_items1" href="#">Служба поддержки</a>
+                <a class="nav_footer_items1" href="#">Услуги</a>
             </div>
-            <div class="text_footer">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные
-                взгляды»</div>
-            <div class="nav_footer_name">
-                <a class="nav_footer1" href="#"><b>НАВИГАЦИЯ</b></a>
-                <div class="footer_items1">
-                    <a class="nav_footer_items1" href="#">О нас</a>
-                    <a class="nav_footer_items1" href="#">Новости</a>
-                    <a class="nav_footer_items1" href="#">Служба поддержки</a>
-                    <a class="nav_footer_items1" href="#">Услуги</a>
-                </div>
-                <a class="nav_footer2" href="#"><b>О НАС</b></a>
-                <div class="footer_items2">
-                    <a class="nav_footer_items2" href="#">О сервисе</a>
-                    <a class="nav_footer_items2" href="#">Наша команда</a>
-                    <a class="nav_footer_items2" href="#">Вакансии</a>
-                    <a class="nav_footer_items2" href="#">Инвесторы</a>
-                </div>
-                <a class="nav_footer3" href="#"><b>СЛУЖБА ПОДДЕРЖКИ</b></a>
-                <div class="footer_items3">
-                    <a class="nav_footer_items3" href="#">Соглашения</a>
-                    <a class="nav_footer_items3" href="#">Сообщества</a>
-                    <a class="nav_footer_items3" href="#">Связь с нами</a>
-                </div>
-                <a class="nav_footer4" href="#"><b>ПОДПИСКА</b></a>
-                <div class="footer_items4">
-                    <br class="nav_footer_items4" href="#">Получайте специальные предложения и новости сервиса</br>
-                    <div class="btn_email">
-                        <input id="email-field" type="email" placeholder="Email">
-                        <div class="img_arrow">
-                            <img src="images/arrow_forward.png" alt="arrow_forward">
-                        </div>
-
-
+            <a class="nav_footer2" href="#"><b>О НАС</b></a>
+            <div class="footer_items2">
+                <a class="nav_footer_items2" href="#">О сервисе</a>
+                <a class="nav_footer_items2" href="#">Наша команда</a>
+                <a class="nav_footer_items2" href="#">Вакансии</a>
+                <a class="nav_footer_items2" href="#">Инвесторы</a>
+            </div>
+            <a class="nav_footer3" href="#"><b>СЛУЖБА ПОДДЕРЖКИ</b></a>
+            <div class="footer_items3">
+                <a class="nav_footer_items3" href="#">Соглашения</a>
+                <a class="nav_footer_items3" href="#">Сообщества</a>
+                <a class="nav_footer_items3" href="#">Связь с нами</a>
+            </div>
+            <a class="nav_footer4" href="#"><b>ПОДПИСКА</b></a>
+            <div class="footer_items4">
+                <br class="nav_footer_items4" href="#">Получайте специальные предложения и новости сервиса</br>
+                <div class="btn_email">
+                    <input id="email-field" type="email" placeholder="Email">
+                    <div class="img_arrow">
+                        <img src="images/arrow_forward.png" alt="arrow_forward">
                     </div>
-                </div>
 
+
+                </div>
             </div>
-            <div class="footer_copyright_bar"> Copyright © 2018 Toxin отель. Все права защищены. </div>
-            <div class="rectangle">
-                <a class="logo_tw" href="https://twitter.com">
-                    <img src="images/tw.png" alt="twitter">
-                </a>
-                <a class="logo_fb" href="https://facebook.com">
-                    <img src="images/fb.png" alt="facebook">
-                </a>
-                <a class="logo_ig" href="https://instagram.com">
-                    <img src="images/ig.png" alt="instagram">
-                </a>
-            </div>
+
         </div>
+        <div class="footer_copyright_bar"> Copyright © 2018 Toxin отель. Все права защищены. </div>
+        <div class="rectangle">
+            <a class="logo_tw" href="https://twitter.com">
+                <img src="images/tw.png" alt="twitter">
+            </a>
+            <a class="logo_fb" href="https://facebook.com">
+                <img src="images/fb.png" alt="facebook">
+            </a>
+            <a class="logo_ig" href="https://instagram.com">
+                <img src="images/ig.png" alt="instagram">
+            </a>
+        </div>
+    </div>
 
     </div>
     </div>

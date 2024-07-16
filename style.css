@@ -251,54 +251,97 @@ body {
 
 .btn_arrive {
     position: absolute;
-    cursor: pointer;
+    display: inline-block;
     top: 278.44px;
     left: 170px;
     width: 148px;
     height: 42px;
-    border: 1px solid #1F204140;
-    border-radius: 4px;
+    color: rgba(31, 32, 65, 0.5);
 
 }
 
 .btn_arrive1 {
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    background-color: white;
     display: flex;
-    color: #1F2041BF;
-    left: 14px;
+    color: rgba(31, 32, 65, 0.5);
     font-size: 14px;
     position: absolute;
     cursor: pointer;
     text-decoration: none;
-    top: 8.56px;
-    width: 103px;
-    height: 23px;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.img_btn_arrive1 {
-    width: 44px;
+    width: 150px;
     height: 44px;
-    left: 105px;
-    size: 24px;
-    position: absolute;
-    display: flex;
     align-items: center;
     justify-content: space-around;
+    font-family: Montserrat;
 }
+
+.btn_arrive1 i {
+    font-size: 16px;
+}
+
+.btn_check_out1:active .calendar:hover {
+    position: static;
+}
+
+.text_check_out {
+    position: absolute;
+    width: 83px;
+    height: 15px;
+    left: 170px;
+    top: -20px;
+    font-size: 12px;
+    color: #1F2041;
+    font-weight: 700;
+}
+
+.btn_check_out {
+    position: absolute;
+    display: inline-block;
+    left: 170px;
+    width: 148px;
+    height: 42px;
+    color: rgba(31, 32, 65, 0.5);
+
+
+}
+
+.btn_check_out1 {
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    background-color: white;
+    display: flex;
+    color: rgba(31, 32, 65, 0.5);
+    font-size: 14px;
+    position: absolute;
+    cursor: pointer;
+    text-decoration: none;
+    width: 150px;
+    height: 44px;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Montserrat;
+    
+}
+
 
 .calendar {
     position: absolute;
-    top: 49px;
     width: 298px;
     height: 347px;
     left: 0px;
-    display: flex;
+    margin-top: 49px;
+    display: none;
     flex-direction: column;
     padding: 10px;
     background: white;
     border-radius: 4px;
     border: 1px solid rgba(31, 32, 65, 0.25);
+}
+
+.btn_arrive:hover .calendar {
+    display: block;
 }
 
 .calendar_header {
@@ -309,6 +352,7 @@ body {
 }
 
 .monthYear {
+    text-transform: capitalize;
     text-align: center;
     height: 24px;
     font-size: 19px;
@@ -316,7 +360,7 @@ body {
 }
 
 .calendar_header button {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 20.4px;
     text-align: center;
     display: flex;
@@ -352,7 +396,7 @@ body {
 .dates {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    width: 279px;
+    width: auto;
     height: 200px;
     font-size: 12px;
     padding: 0px;
@@ -439,60 +483,6 @@ body {
     font-family: Montserrat;
 }
 
-
-.check_out {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-}
-
-.text_check_out {
-    position: absolute;
-    width: 83px;
-    height: 15px;
-    left: 340px;
-    top: 259px;
-    font-size: 12px;
-    color: #1F2041;
-    font-weight: 700;
-}
-
-.btn_check_out {
-    position: absolute;
-    cursor: pointer;
-    top: 278.44px;
-    left: 340px;
-    width: 148px;
-    height: 42px;
-    border: 1px solid #1F204140;
-    border-radius: 4px;
-}
-
-.btn_check_out1 {
-    display: flex;
-    color: #1F2041BF;
-    left: 14px;
-    font-size: 14px;
-    position: absolute;
-    cursor: pointer;
-    text-decoration: none;
-    top: 8.56px;
-    width: 103px;
-    height: 23px;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.img_btn_check_out1 {
-    width: 44px;
-    height: 44px;
-    left: 105px;
-    size: 24px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
 
 .text_back {
     width: 297px;

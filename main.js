@@ -15,7 +15,7 @@ const updateCalendar = () => {
     const firstDayIndex = firstDay.getDay();
     const lastDayIndex = lastDay.getDay();
 
-    const monthYearString = currentDate.toLocaleString('default', {month: 'long', year: 'numeric'});
+    const monthYearString = currentDate.toLocaleString('ru', {month: 'long', year: 'numeric'});
     monthYearElement.textContent = monthYearString;
 
     let datesHTML = '';
