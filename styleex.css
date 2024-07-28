@@ -1,0 +1,22 @@
+.air-datepicker -bottom-left- -from-bottom- -active- {
+  height: 369px;
+  width: 320px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+}
+.air-datepicker-nav {
+  height: 24px;
+  top: 20px;
+}
+.air-datepicker-nav--action {
+  size: 24px;
+  align-content: center;
+  color: rgba(188, 156, 255, 1);
+}
+.air-datepicker-nav--title {
+  font-family: Montserrat;
+font-size: 19px;
+font-weight: 700;
+line-height: 23.16px;
+text-align: center;
+
+}

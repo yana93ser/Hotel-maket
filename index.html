@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="air-datepicker/dist/air-datepicker.css">
     <title>Hotel maket</title>
 </head>
 
@@ -43,9 +44,23 @@
             </div>
             <div class="gest">
                 <div class="text_gest">ГОСТИ</div>
-                <div class="btn_gest">
-                    <a class="btn_gest1" href="">Сколько гостей</a>
+                <form>
+                    <div class="btn_gest" >
+                    <div class="btn_gest1">Сколько гостей</div>
                     <a class="img_btn_gest1" href=""><img src="images/expand_more.png" alt="expand_more.png"></a>
+                   <input id="people" type="people" value="0" name="gest">
+                   <label for="people">ВЗРОСЛЫЕ</label>
+                        
+<div class="number" data-step="1" data-min="0" data-max="1000">
+                    <input class="number-text" type="text" name="count" value="1">
+                    </option>
+                <a href="#" class="number-minus">-</a>
+                <a href="#" class="number-plus">+</a>
+                </div>
+                    </select>
+
+</form>
+                </div>
                 </div>
             </div>
             <div class="arrive">
@@ -53,44 +68,20 @@
                 <div class="btn_arrive">
                     <button class="btn_arrive1">ДД.ММ.ГГГГ<i class="fa fa-angle-down" aria-hidden="true"
                             style="color: rgba(31, 32, 65, 0.5);"></i>
+                            
                     </button>
+                    </form>
                     <div class="text_check_out">ВЫЕЗД</div>
                     <div class="btn_check_out">
-                        <button class="btn_check_out1">ДД.ММ.ГГГГ<i class="fa fa-angle-down" aria-hidden="true"
+                        <input type="text" id="airdatepiker" class="btn_check_out1">ДД.ММ.ГГГГ<i class="fa fa-angle-down" aria-hidden="true"
                                 style="color: rgba(31, 32, 65, 0.5);"></i>
-                        </button>
-
-                    </div>
-                    <div class="calendar">
-                        <div class="calendar_header">
-                            <button id="prevBtn">
-                                <i class="fa-solid fa-arrow-left" style="color: #B197FC;"></i>
-                            </button>
-                            <div class="monthYear" id="monthYear"></div>
-                            <button id="nextBtn">
-                                <i class="fa-solid fa-arrow-right" style="color: #B197FC;"></i>
-                            </button>
+                            </div>
                         </div>
-                        <div class="days">
-                            <div class="day">Пн</div>
-                            <div class="day">Вт</div>
-                            <div class="day">Ср</div>
-                            <div class="day">Чт</div>
-                            <div class="day">Пт</div>
-                            <div class="day">Сб</div>
-                            <div class="day">Вс</div>
-                        </div>
-                        <div class="dates" id="dates"></div>
-                        <div class="reset">
-                            <button type="button" id="buttonResAll">ОЧИСТИТЬ</button>
-                        </div>
-                        <div class="use">
-                            <button type="button" id="buttonUse">ПРИМЕНИТЬ</button>
-                        </div>
-                    </div>
-                    <script src="main.js"></script>
-                </div>
-            </div>
+                    <script src="air-datepicker/dist/air-datepicker.js"></script>
+                <script>
+                    new AirDatepicker('#air-datepicker')
+                </script>
+            
         </div>
 
         <div class="text_back">Лучшие номера для вашей работы, отдыха и просто вдохновения</div>

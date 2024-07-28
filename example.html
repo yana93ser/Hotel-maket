@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="air-datepicker/dist/air-datepicker.css" />
+        <link rel="stylesheet" href="styleex.css" />
+        <title>Example</title>
+    </head>
+    <body>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <input
+                        type="text"
+                        id="air-datepicker"
+                        class="form-control"
+                    />
+                </div>
+            </div>
+        </div>
+        <script src="air-datepicker/dist/air-datepicker.js"></script>
+        <script>
+            new AirDatepicker("#air-datepicker", {
+                autoClose: false,
+                range: true,
+                multipleDatesSeparator: " - ",
+                buttons: ["clear", "use"],
+                fixedHeight: true,
+                minDate: new Date(),
+                disableNavWhenOutOfRange: true,
+            });
+        </script>
+    </body>
+</html>
