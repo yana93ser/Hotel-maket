@@ -10,7 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<link rel="stylesheet" href="air-datepicker/dist/air-datepicker.css">
+<link rel="stylesheet" href="air-datepicker/dist/air-datepicker.css" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+rel="stylesheet">
     <title>Hotel maket</title>
 </head>
 
@@ -68,7 +70,28 @@
                 <div class="btn_arrive">
                     <button class="btn_arrive1">ДД.ММ.ГГГГ<i class="fa fa-angle-down" aria-hidden="true"
                             style="color: rgba(31, 32, 65, 0.5);"></i>
-                            
+                                        <input
+                                            type="text" 
+                                            id="air-datepicker"
+                                            class="form-control"
+                                            value="ДД.ММ.ГГГГ"
+                                            
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <script src="air-datepicker/dist/air-datepicker.js"></script>
+                            <script>
+                                new AirDatepicker("#air-datepicker", {
+                                    autoClose: false,
+                                    range: true,
+                                    multipleDatesSeparator: " - ",
+                                    buttons: ["clear", "use"],
+                                    fixedHeight: false,
+                                    minDate: new Date(),
+                                    disableNavWhenOutOfRange: true,
+                                });
+                            </script>        
                     </button>
                     </form>
                     <div class="text_check_out">ВЫЕЗД</div>
@@ -77,12 +100,6 @@
                                 style="color: rgba(31, 32, 65, 0.5);"></i>
                             </div>
                         </div>
-                    <script src="air-datepicker/dist/air-datepicker.js"></script>
-                <script>
-                    new AirDatepicker('#air-datepicker')
-                </script>
-            
-        </div>
 
         <div class="text_back">Лучшие номера для вашей работы, отдыха и просто вдохновения</div>
 

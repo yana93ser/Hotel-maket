@@ -2,10 +2,34 @@
   height: 369px;
   width: 320px;
   border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  
+}
+.air-datepicker--navigation {
+  color: rgba(31, 32, 65, 1);
+  font-family: Montserrat;
+}
+.air-datepicker{
+  --adp-font-family:Montserrat;
+  --adp-font-size: 12px;
+  --adp-accent-color:rgba(188, 156, 255, 1);
+  --adp-border-color: rgba(31, 32, 65, 0.25);
+  --adp-pointer-size: none;
+  --adp-border-color-inner: none;
+  --adp-color-secondary:rgba(188, 156, 255, 1);
+  --adp-cell-background-color-selected: rgba(188, 156, 255, 0.2);
+  --adp-cell-background-color-in-range: rgba(188, 156, 255, 0.2);
+  --adp-btn-color: #BC9CFF;
+  --adp-btn-background-color-hover: none;
+  --adp-day-cell-height: 40px;
+  
+
 }
 .air-datepicker-nav {
   height: 24px;
   top: 20px;
+  font-family: Montserrat;
+  color: rgba(188, 156, 255, 1);
 }
 .air-datepicker-nav--action {
   size: 24px;
@@ -18,5 +42,212 @@ font-size: 19px;
 font-weight: 700;
 line-height: 23.16px;
 text-align: center;
+color: rgba(31, 32, 65, 1);
+}
+.air-datepicker-nav--title i {
+  color: rgba(31, 32, 65, 1);;
+}
+.air-datepicker-body--day-name {
+  color: rgba(188, 156, 255, 1);
+  size: 12px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
 
+.air-datepicker-body--cells.-days- {
+  margin-top: 10px;
+}
+
+.air-datepicker-cell.-current- {
+  color: #FFFFFF;
+  border-radius: 100%;
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  ;
+}
+.air-datepicker-cell.-range-from- {
+  border: 0;
+  border-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+.air-datepicker-cell.-range-from- {
+  border-radius: 50% 0 0 50%;
+  border-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+.air-datepicker-cell.-range-to- {
+  border-radius: 0 50% 50% 0;
+}
+.air-datepicker-cell.-selected-{
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 50%;
+  font-weight: 700;
+  background: linear-gradient(180deg, #bc9cff, #8ba4f9);
+  color: #fff;
+}
+}
+..air-datepicker-cell {
+
+font-family: Montserrat;
+    height: 2.8571rem;
+    border-radius: 50%;
+    font-size: .8571rem;
+    color: rgba(31, 32, 65, .5);
+}
+
+
+.calendar {
+  position: absolute;
+  top: 49px;
+  width: 298px;
+  height: 347px;
+  left: 0px;
+  display: none;
+  flex-direction: column;
+  padding: 10px;
+  background: white;
+  border-radius: 4px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  
+}
+
+.btn_arrive:hover .calendar {
+  display: block;
+}
+
+.calendar_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.monthYear {
+  text-transform: capitalize;
+  text-align: center;
+  height: 24px;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.calendar_header button {
+  font-size: 20px;
+  line-height: 20.4px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  width: 23.93px;
+  height: 24px;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  width: 279px;
+  height: 40px;
+  align-items: center;
+  padding: 10px;
+  padding-top: 18px;
+  padding-bottom: 0px;
+}
+
+.day {
+  text-align: center;
+  padding: 5px;
+  color: rgba(188, 156, 255, 1);
+  font-size: 12px;
+  line-height: 14, 63px;
+  font-weight: 700;
+}
+
+.dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  width: auto;
+  height: 200px;
+  font-size: 12px;
+  padding: 0px;
+  padding-left: 10px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0px;
+  margin: auto;
+  cursor: pointer;
+  font-size: 12;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transition: 0.2s;
+  color: rgba(31, 32, 65, 0.5);
+  ;
+}
+
+.date:hover,
+.date.active {
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  color: #FFFFFF;
+}
+
+.date.inactive {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.date.inactive:hover {
+  color: #FFFFFF;
+}
+.reset {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  line-height: 14.63px;
+  left: 19px;
+  top: 333px;
+}
+
+.reset button {
+  height: 15px;
+  width: 72px;
+  padding: 0px;
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(188, 156, 255, 1);
+  border: none;
+  background-color: #FFFFFF;
+  line-height: 14.63px;
+  font-family: Montserrat;
+}
+
+.use {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  line-height: 14.63px;
+  left: 215px;
+  top: 333px;
+}
+
+.use button {
+  height: 15px;
+  width: 72px;
+  padding: 0px;
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(188, 156, 255, 1);
+  border: none;
+  background-color: #FFFFFF;
+  line-height: 14.63px;
+  font-family: Montserrat;
 }

@@ -21,13 +21,13 @@
 }
 
 .air-datepicker-body--day-name {
-  color: var(--adp-day-name-color);
+  color: rgba(188, 156, 255, 1);
   display: flex;
   align-items: center;
   justify-content: center;
   flex: 1;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: .8em;
 
   &.-clickable- {

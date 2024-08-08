@@ -7,7 +7,6 @@
 body {
     margin: 0;
     font-family: "Montserrat", sans-serif;
-
 }
 
 .header {
@@ -19,7 +18,7 @@ body {
 }
 
 .header_line {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
     height: 68px;
     padding-left: 140px;
@@ -45,7 +44,7 @@ body {
 }
 
 .nav-items {
-    color: #1F204180;
+    color: #1f204180;
     text-decoration: none;
     margin-right: 21.3px;
     font-size: 14px;
@@ -64,31 +63,28 @@ body {
     width: 68px;
     height: 14px;
     padding: 8px;
-    border: 2px solid #BC9CFF;
-    border-color: linear-gradient(180deg, #BC9CFF, #8BA4F9);
+    border: 2px solid #bc9cff;
+    border-color: linear-gradient(180deg, #bc9cff, #8ba4f9);
     background-color: white;
-    color: #BC9CFF;
+    color: #bc9cff;
     cursor: pointer;
     text-decoration: none;
     border-radius: 21px;
     font-weight: 700;
-
 }
 
 .button1 {
     margin-left: 20px;
     height: 14px;
     width: 175px;
-    background: linear-gradient(180deg, #BC9CFF, #8BA4F9);
-    color: #FFFFFF;
+    background: linear-gradient(180deg, #bc9cff, #8ba4f9);
+    color: #ffffff;
     padding: 8px;
-    border: 2px solid #BC9CFF;
-    ;
+    border: 2px solid #bc9cff;
     cursor: pointer;
     text-decoration: none;
     border-radius: 21px;
     font-weight: 700;
-
 }
 
 .back_img {
@@ -97,7 +93,7 @@ body {
     left: 139px;
     width: 380px;
     height: 374px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     border-radius: 4px;
     box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.2);
 }
@@ -108,7 +104,7 @@ body {
     left: 170px;
     font-weight: 700;
     font-size: 24px;
-    color: #1F2041;
+    color: #1f2041;
     max-width: 320px;
 }
 
@@ -116,7 +112,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: linear-gradient(180deg, #BC9CFF, #8BA4F9);
+    background: linear-gradient(180deg, #bc9cff, #8ba4f9);
     top: 439px;
     left: 169px;
     width: 320px;
@@ -128,7 +124,7 @@ body {
 
 .button3 {
     background: none;
-    color: #FFFFFF;
+    color: #ffffff;
     top: 454px;
     text-align: center;
     cursor: pointer;
@@ -139,7 +135,6 @@ body {
     font-weight: 700;
     padding: 7px;
     border: 2px;
-
 }
 
 .left {
@@ -160,13 +155,13 @@ body {
 .left::before {
     width: 16px;
     height: 2px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     top: 7px;
 }
 
 .left::after {
-    border-top: 2px solid #FFFFFF;
-    border-left: 2px solid #FFFFFF;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
     transform: rotate(135deg);
     top: 3px;
     left: 3px;
@@ -181,7 +176,6 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
-
 }
 
 .text_gest {
@@ -191,7 +185,7 @@ body {
     left: 170px;
     top: 343px;
     font-size: 12px;
-    color: #1F2041;
+    color: #1f2041;
     font-weight: 700;
 }
 
@@ -202,66 +196,69 @@ body {
     left: 169px;
     width: 320px;
     height: 43px;
-    border: 1px solid #1F204140;
+    border: 1px solid #1f204140;
     border-radius: 4px;
 }
 .number {
-	position:absolute;
+    position: absolute;
     left: 391px;
-	padding: 0;
-	width: 92px;
-	border: 0;
-	display: inline-block;
+    padding: 0;
+    width: 92px;
+    border: 0;
+    display: inline-block;
 }
-.number-minus, .number-plus {
-	position: absolute;
-	top: 344px;
-	width: 30px;
-	height: 30px;
-	display: block;
-	background:#FFFFFF;
-	font-size: 18px;
+.number-minus,
+.number-plus {
+    position: absolute;
+    top: 344px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    background: #ffffff;
+    font-size: 18px;
     align-items: center;
-	text-align: center;
+    text-align: center;
     line-height: 30px;
-	font-family: Montserrat;
-	color: rgba(31, 32, 65, 0.5);
-	text-decoration: none;
+    font-family: Montserrat;
+    color: rgba(31, 32, 65, 0.5);
+    text-decoration: none;
 }
 .number-minus {
-	left: 0;
+    left: 0;
     border-radius: 50%;
-	border-right: 1px solid rgba(31, 32, 65, 0.25);
+    border-right: 1px solid rgba(31, 32, 65, 0.25);
 }
 .number-plus {
-	right: 0;
+    right: 0;
     border-radius: 50%;
-	border-left: 1px solid rgba(31, 32, 65, 0.25);
+    border-left: 1px solid rgba(31, 32, 65, 0.25);
 }
-.number-minus:hover, .number-plus:hover {
-	background: none;
+.number-minus:hover,
+.number-plus:hover {
+    background: none;
 }
-.number-minus:active, .number-plus:active {
-	background: none;
+.number-minus:active,
+.number-plus:active {
+    background: none;
 }
-.number-text{
-	display: inline-block;
-	font-size: 14px;
-	color: #000;
-	line-height: 32px;
-	height: 32px;
-	padding: 0;
-	margin: 0 0 0 42px;
-	background: #fff;
-	outline: none;
-	border: none;
-	width: 57px;
-	text-align: center;
+.number-text {
+    display: inline-block;
+    font-size: 14px;
+    color: #000;
+    line-height: 32px;
+    height: 32px;
+    padding: 0;
+    margin: 0 0 0 42px;
+    background: #fff;
+    outline: none;
+    border: none;
+    width: 57px;
+    text-align: center;
 }
 
 .btn_gest1 {
     display: flex;
-    color: #1F2041BF;
+    color: #1f2041bf;
     left: 15px;
     font-size: 14px;
     position: absolute;
@@ -282,7 +279,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-
 }
 
 .arrive {
@@ -298,7 +294,7 @@ body {
     left: 170px;
     top: 259px;
     font-size: 12px;
-    color: #1F2041;
+    color: #1f2041;
     font-weight: 700;
 }
 
@@ -344,7 +340,7 @@ body {
     left: 170px;
     top: -20px;
     font-size: 12px;
-    color: #1F2041;
+    color: #1f2041;
     font-weight: 700;
 }
 
@@ -355,7 +351,6 @@ body {
     width: 148px;
     height: 42px;
     color: rgba(31, 32, 65, 0.5);
-
 }
 
 .btn_check_out1 {
@@ -374,166 +369,123 @@ body {
     justify-content: space-around;
     font-family: Montserrat;
 }
-
-
-.calendar {
+input#air-datepicker {
+    width: 132px;
+    height: 40px;
     position: absolute;
-    top: 49px;
-    width: 298px;
-    height: 347px;
-    left: 0px;
-    display: none;
-    flex-direction: column;
-    padding: 10px;
-    background: white;
+    left: -1px;
+    top: -1px;
+    border: 1px solid #1f204140;
     border-radius: 4px;
+    background: none;
+    padding-left: 14px;
+}
+
+#air-datepicker-global-container > div {
+    top: 328.438px;
+    height: 369px;
+    width: 318px;
+    height: 366px;
     border: 1px solid rgba(31, 32, 65, 0.25);
-    
+    border-radius: 4px;
+    margin-top: -5px;
+}
+.air-datepicker--pointer {
+    display: none;
+}
+.air-datepicker--navigation {
+    top: -2px;
+    color: rgba(31, 32, 65, 1);
+    font-family: Montserrat;
+}
+.air-datepicker {
+    --adp-font-family: Montserrat;
+    --adp-font-size: 12px;
+    --adp-accent-color: rgba(188, 156, 255, 1);
+    --adp-border-color: rgba(31, 32, 65, 0.25);
+    --adp-pointer-size: none;
+    --adp-border-color-inner: none;
+    --adp-color-secondary: rgba(188, 156, 255, 1);
+    --adp-cell-background-color-selected: rgba(188, 156, 255, 0.2);
+    --adp-cell-background-color-in-range: rgba(188, 156, 255, 0.2);
+    --adp-btn-color: #bc9cff;
+    --adp-btn-background-color-hover: none;
+    --adp-nav-color-secondary: rgba(31, 32, 65, 1);
+    --adp-color-secondary: rgba(31, 32, 65, 1);
+    --adp-day-name-color: rgba(188, 156, 255, 1);
 }
 
-.btn_arrive:hover .calendar {
-    display: block;
-}
-
-.calendar_header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-
-.monthYear {
-    text-transform: capitalize;
-    text-align: center;
+.air-datepicker-nav {
     height: 24px;
+    top: 20px;
+    font-family: Montserrat;
+    color: rgba(188, 156, 255, 1);
+    margin-top: 10px;
+    margin-left: 11px;
+    margin-right: 11px;
+}
+.air-datepicker-nav--action {
+    size: 24px;
+    align-content: center;
+    color: rgba(188, 156, 255, 1);
+}
+.air-datepicker-nav--title {
+    font-family: Montserrat;
     font-size: 19px;
     font-weight: 700;
-}
-
-.calendar_header button {
-    font-size: 20px;
-    line-height: 20.4px;
+    line-height: 23.16px;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    border: none;
-    border-radius: 50%;
-    background-color: white;
-    cursor: pointer;
-    width: 23.93px;
-    height: 24px;
+    color: rgba(31, 32, 65, 1);
+}
+.air-datepicker-nav--title i {
+    color: rgba(31, 32, 65, 1);
+    --adp-nav-color-secondary: none;
+}
+.air-datepicker--content {
+    height: 100%;
+    margin-left: 16px;
+    margin-top: 23px;
+    width: 279.39px;
 }
 
-.days {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    width: 279px;
-    height: 40px;
-    align-items: center;
-    padding: 10px;
-    padding-top: 18px;
-    padding-bottom: 0px;
-}
-
-.day {
-    text-align: center;
-    padding: 5px;
+.air-datepicker-body--day-name {
     color: rgba(188, 156, 255, 1);
+    size: 12px;
     font-size: 12px;
-    line-height: 14, 63px;
     font-weight: 700;
 }
 
-.dates {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    width: auto;
-    height: 200px;
-    font-size: 12px;
-    padding: 0px;
-    padding-left: 10px;
-    align-items: center;
-    justify-content: center;
-
+.air-datepicker-cell.-current- {
+    color: #ffffff;
+    border-radius: 100%;
+    background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+}
+.air-datepicker-cell.-range-from- {
+    border: 0;
+    border-color: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
 }
 
-.date {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 0px;
-    margin: auto;
-    cursor: pointer;
-    font-size: 12;
+.air-datepicker-cell.-range-from- {
+    border-radius: 50% 0 0 50%;
+    border-color: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+}
+.air-datepicker-cell.-range-to- {
+    border-radius: 0 50% 50% 0;
+}
+.air-datepicker-cell.-selected- {
+    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    transition: 0.2s;
+    font-weight: 700;
+    background: linear-gradient(180deg, #bc9cff, #8ba4f9);
+    color: #fff;
+}
+
+.air-datepicker-cell {
+    font-family: Montserrat;
+    border-radius: 50%;
+    font-size: 0.8571rem;
     color: rgba(31, 32, 65, 0.5);
-    ;
 }
-
-.date:hover,
-.date.active {
-    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
-    color: #FFFFFF;
-}
-
-.date.inactive {
-    color: rgba(31, 32, 65, 0.25);
-}
-
-.date.inactive:hover {
-    color: #FFFFFF;
-}
-
-.reset {
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    line-height: 14.63px;
-    left: 19px;
-    top: 333px;
-}
-
-.reset button {
-    height: 15px;
-    width: 72px;
-    padding: 0px;
-    font-size: 12px;
-    font-weight: 700;
-    color: rgba(188, 156, 255, 1);
-    border: none;
-    background-color: #FFFFFF;
-    line-height: 14.63px;
-    font-family: Montserrat;
-}
-
-.use {
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    line-height: 14.63px;
-    left: 215px;
-    top: 333px;
-}
-
-.use button {
-    height: 15px;
-    width: 72px;
-    padding: 0px;
-    font-size: 12px;
-    font-weight: 700;
-    color: rgba(188, 156, 255, 1);
-    border: none;
-    background-color: #FFFFFF;
-    line-height: 14.63px;
-    font-family: Montserrat;
-}
-
 
 .text_back {
     width: 297px;
@@ -542,7 +494,7 @@ body {
     left: 1009px;
     font-size: 14px;
     line-height: 24px;
-    color: #1F2041BF;
+    color: #1f2041bf;
     text-align: right;
     position: absolute;
     display: flex;
@@ -551,7 +503,7 @@ body {
 }
 
 .footer {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     top: 897px;
     height: 443px;
     width: 1440px;
@@ -575,7 +527,7 @@ body {
     left: 140px;
     font-size: 14px;
     line-height: 24px;
-    color: #1F2041BF;
+    color: #1f2041bf;
     text-align: left;
     position: absolute;
     display: flex;
@@ -599,7 +551,7 @@ body {
     text-align: left;
     text-decoration: none;
     font-size: 12px;
-    color: #1F2041;
+    color: #1f2041;
 }
 
 .footer_items1 {
@@ -614,19 +566,17 @@ body {
 .nav_footer_items1 {
     padding: 0px;
     font-size: 14px;
-    color: #1F204180;
+    color: #1f204180;
     text-decoration: none;
-
 }
 
 .nav_footer2 {
     text-align: left;
     text-decoration: none;
     font-size: 12px;
-    color: #1F2041;
+    color: #1f2041;
     left: 200px;
     position: absolute;
-
 }
 
 .footer_items2 {
@@ -641,7 +591,7 @@ body {
 .nav_footer_items2 {
     padding: 0px;
     font-size: 14px;
-    color: #1F204180;
+    color: #1f204180;
     text-decoration: none;
     margin-right: 21.3px;
 }
@@ -650,10 +600,9 @@ body {
     text-align: left;
     text-decoration: none;
     font-size: 12px;
-    color: #1F2041;
+    color: #1f2041;
     left: 400px;
     position: absolute;
-
 }
 
 .footer_items3 {
@@ -668,7 +617,7 @@ body {
 .nav_footer_items3 {
     padding: 0px;
     font-size: 14px;
-    color: #1F204180;
+    color: #1f204180;
     text-decoration: none;
     margin-right: 21.3px;
 }
@@ -677,11 +626,10 @@ body {
     text-align: left;
     text-decoration: none;
     font-size: 12px;
-    color: #1F2041;
+    color: #1f2041;
     left: 600px;
     position: absolute;
     padding-bottom: 20px;
-
 }
 
 .footer_items4 {
@@ -693,7 +641,7 @@ body {
     top: 8px;
     font-size: 14px;
     line-height: 24px;
-    color: #1F2041BF;
+    color: #1f2041bf;
 }
 
 .btn_email {
@@ -702,7 +650,7 @@ body {
     top: 95px;
     width: 259px;
     height: 43px;
-    border: 1px solid #1F204140;
+    border: 1px solid #1f204140;
     border-radius: 4px;
 }
 

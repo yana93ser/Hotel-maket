@@ -45,11 +45,11 @@ export default {
 
     showEvent: 'focus',
     autoClose: false,
-    fixedHeight: false,
+    fixedHeight: true,
 
     // navigation
-    prevHtml: '<svg><path d="M 17,12 l -5,5 l 5,5"></path></svg>',
-    nextHtml: '<svg><path d="M 14,12 l 5,5 l -5,5"></path></svg>',
+    prevHtml: '<i class="material-icons">arrow_back</i>',
+    nextHtml: '<i class="material-icons">arrow_forward</i>',    
     navTitles: {
         days: 'MMMM, <i>yyyy</i>',
         months: 'yyyy',
